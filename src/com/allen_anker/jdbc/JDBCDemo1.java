@@ -1,16 +1,17 @@
 package com.allen_anker.jdbc;
 
-import com.mysql.jdbc.Driver;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.sql.*;
 import java.util.Properties;
 
 public class JDBCDemo1 {
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+
+    @Test
+    public void test() throws IOException, ClassNotFoundException {
 
         Connection connection = null;
         Statement statement = null;
